@@ -29,7 +29,12 @@ function displayResults(weather) {
     let city = document.querySelector('.location .city');
     city.innerHTML = `${weather.name}, ${weather.sys.country}`;
     
-    if(weather.cod==404) alert('error city')else alert('success');
+    if(weather.cod=='404'){
+        alert('error city')
+    }else{
+        alert('success');
+    }
+
     
     let now = new Date();
     let date = document.querySelector('.location .date');
