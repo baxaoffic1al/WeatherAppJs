@@ -32,7 +32,7 @@ function displayResults(weather) {
 
     alert('New Test')
     
-    if(weather.cod=='404'){
+    if(weather.sys.cod=='404'){
         alert('error city')
     }else{
         alert('success');
