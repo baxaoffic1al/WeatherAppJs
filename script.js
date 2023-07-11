@@ -21,6 +21,7 @@ function getResults(querry) {
             return weather.json()
         })
         .then(displayResults);
+    console.log(displayResults);
 
 }
 
