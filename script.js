@@ -28,6 +28,9 @@ function displayResults(weather) {
     console.log(weather);
     let city = document.querySelector('.location .city');
     city.innerHTML = `${weather.name}, ${weather.sys.country}`;
+
+
+    alert('New Test')
     
     if(weather.cod=='404'){
         alert('error city')
